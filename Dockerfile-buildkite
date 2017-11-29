@@ -1,0 +1,17 @@
+FROM node:8.8.1
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY . .
+RUN apt-get update
+RUN apt-get install git unzip -y
+RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778-linux.zip
+RUN unzip sonar-scanner-cli-3.0.3.778-linux.zip
+ENV PATH="/usr/src/app/sonar-scanner-3.0.3.778-linux/bin:${PATH}"
+
+RUN npm install
+
+EXPOSE 4200
+CMD [ "echo", "frontend" ]
