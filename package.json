@@ -8,7 +8,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,js,json,css,scss,md}": ["prettier --write", "git add"]
   },
   "private": true,
   "dependencies": {
@@ -36,6 +41,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "husky": "^0.14.3",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -44,9 +50,13 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "lint-staged": "^6.0.0",
+    "prettier": "1.9.1",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
+    "tslint-config-prettier": "^1.6.0",
+    "tslint-eslint-rules": "^4.1.1",
     "typescript": "~2.4.2"
   }
 }
