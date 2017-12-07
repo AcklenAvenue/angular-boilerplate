@@ -15,7 +15,6 @@ export function appReducer(state = initialState, action: app.Actions) {
   switch (action.type) {
     case app.INCREMENT:
       value = action.payload;
-
       return { ...state, votes: state.votes + value };
 
     case app.DECREMENT:
