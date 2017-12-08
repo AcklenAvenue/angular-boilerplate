@@ -13,7 +13,7 @@ RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-sc
 RUN unzip sonar-scanner-cli-3.0.3.778-linux.zip
 ENV PATH="/usr/src/app/sonar-scanner-3.0.3.778-linux/bin:${PATH}"
 RUN npm i -g gulp 
-run npm install -g angular-cli
+RUN npm i angular-cli
 RUN npm install
 
 EXPOSE 4200
