@@ -5,7 +5,6 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY package.json /usr/src/app
 COPY . .
 RUN apt-get update
 RUN apt-get install git unzip -y
@@ -14,7 +13,6 @@ RUN unzip sonar-scanner-cli-3.0.3.778-linux.zip
 ENV PATH="/usr/src/app/sonar-scanner-3.0.3.778-linux/bin:${PATH}"
 RUN npm i -g gulp 
 RUN npm i @angular/cli
-RUN alias ng="/usr/src/app/node_modules/@angular/cli/bin/ng"
 RUN npm install
 
 EXPOSE 4200

@@ -2,6 +2,7 @@
 
 set -eo pipefail
 echo "--- Test"
+npm i @angular/cli
 alias ng="/usr/src/app/node_modules/@angular/cli/bin/ng"
 ng test 
 #echo "--- E2E Test"
