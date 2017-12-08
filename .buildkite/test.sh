@@ -2,7 +2,6 @@
 
 set -eo pipefail
 echo "--- Test"
-npm install -g @angular/cli
 ng test 
 #echo "--- E2E Test"
 #ng e2e
