@@ -2,7 +2,7 @@
 
 set -eo pipefail
 echo "--- Test"
-ng test 
+ng test --browser ChromeCustom
 #echo "--- E2E Test"
 #ng e2e
 

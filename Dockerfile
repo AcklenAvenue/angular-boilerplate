@@ -1,10 +1,10 @@
-FROM node:8.8.1
+FROM acklenavenue/angular-cli_chrome
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
-
+RUN apt-get update
 RUN npm install
 
 COPY . /usr/src/app
