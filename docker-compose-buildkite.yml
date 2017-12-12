@@ -10,7 +10,6 @@ services:
       - /usr/bin/buildkite-agent:/usr/bin/buildkite-agent
       - /usr/src/app/sonar-scanner-3.0.3.778-linux
       - /usr/src/app/node_modules
-      - /usr/src/app/dist
     ports:
       - "4200:4200"
       - "9229:9229"
