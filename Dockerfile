@@ -1,6 +1,7 @@
 FROM acklenavenue/angular-cli_chrome
 
 RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/dist
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
