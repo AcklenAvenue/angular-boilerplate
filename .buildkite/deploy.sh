@@ -2,5 +2,6 @@
 
 set -eo pipefail
 echo "--- Deploy"
-sudo ng build
+whoami
+ng build
 gulp deploy
