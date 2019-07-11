@@ -40,7 +40,7 @@
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "async": "^2.6.0",
+    "async": "^3.1.0",
     "aws-sdk": "^2.168.0",
     "codelyzer": "^4.0.1",
     "fs-access": "^1.0.1",
