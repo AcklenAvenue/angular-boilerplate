@@ -57,7 +57,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "1.9.1",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
